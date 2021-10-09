@@ -3,3 +3,41 @@
 }
 .check{
 }
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: bisque;
+}
+
+/* border for tables +  customised formatting (colours, layout)  */
+table, th, td {
+    border: 1px solid black;
+    table-layout: auto;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 730px;
+
+  }
+
+/* image padding and border    */
+img{
+    border: 5px;
+    padding: 5px;
+}
+
+/* button padding  */
+.btn{
+    padding: 5px;
+}
+
+/* color filter 2 images  */
+.card2{
+  filter: saturate(5.2) invert(9%) sepia(12%) ;
+}
+.card6{ 
+    filter: saturate(2.2) invert(5%) sepia(14%) ;
+  }
+
