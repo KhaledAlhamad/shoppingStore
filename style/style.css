@@ -1,15 +1,12 @@
-.d-block{
-    
+body{
+    background-color: cadetblue;
 }
-.check{
-}
-
 .main{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 /* border for tables +  customised formatting (colours, layout)  */
@@ -31,13 +28,76 @@ img{
 /* button padding  */
 .btn{
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* color filter 2 images  */
+/*  font styles with different colouring effects  */
+.card1  {
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+    font-style: italic;
+}
+
+/* color filter 2 images & font styles with different colouring effects */
 .card2{
   filter: saturate(5.2) invert(9%) sepia(12%) ;
+  font-style:inherit;
+  color: black;
 }
-.card6{ 
+/* color filter 2 images */
+.card6 { 
     filter: saturate(2.2) invert(5%) sepia(14%) ;
+    font-family: sans-serif;
+    font-style: oblique;
+    
+  }
+  /*  font styles with different colouring effects  */
+  .card6 .card-text{ 
+    filter: saturate(2.2) invert(5%) sepia(14%) ;
+    font-family: sans-serif;
+    font-style: oblique;
+    color: blue;
+    
+  }  
+
+  /* for testimonials */
+.container .review{
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container .review img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
   }
 
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
